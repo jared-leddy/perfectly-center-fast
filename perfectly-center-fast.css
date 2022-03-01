@@ -1,0 +1,27 @@
+/*
+left: 50% & top: 50%; will push the item from the top/left edge.
+So it doesn't perfectly center the item.
+
+transform x/y with -50% only works on the item itself
+which will calculate and minus half of the item's
+height/width from the left/top 50% declaration
+*/
+
+.horizontalCenter {
+    position:relative;
+    left:50%;
+    transform:translatex(-50%);
+}
+
+.verticallyCentered {
+    position:relative;
+    top:50%;
+    transform:translatey(-50%);
+}
+
+.xyCentered {
+    position:relative;
+    top:50%;
+    left:50%:
+    transform:translate(-50%,-50%);
+}
